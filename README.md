@@ -1,4 +1,4 @@
-# GoScrape
+# Go-cli-Scrape
 
 A simple command-line web scraper built with Go.
 
