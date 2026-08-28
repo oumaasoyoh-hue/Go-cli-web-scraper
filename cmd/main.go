@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	urlpkg "net/url"
 	"os"
 )
 
@@ -13,6 +14,12 @@ func main() {
 
 	url := os.Args[1]
 
-	fmt.Println("URL:", url)
+	_, err := urlpkg.ParseRequestURI(url)
+	if err != nil {
+		fmt.Println("Invalid URL")
+		return
+	}
+
+	fmt.Println("Valid URL:", url)
 
 }
