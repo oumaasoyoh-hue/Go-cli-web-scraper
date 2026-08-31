@@ -8,6 +8,5 @@ import (
 func main() {
 	if len(os.Args) < 2 {
 		return
-	}
-	
+	}	
 }
